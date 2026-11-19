@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulir Klinik Sehat</title>
+</head>
+<body>
+  <h1>Formulir Pendaftaran Pasien</h1>
+  <h2>Klinik Sehat</h2>
+
+  <form action="#" method="post">
+
+    <p>
+      <label for="nama">Nama Pasien:</label><br>
+      <input type="text" id="nama" name="nama" required>
+    </p>
+
+    <p>
+      <label for="umur">Umur:</label><br>
+      <input type="number" id="umur" name="umur" min="0" max="120">
+    </p>
+
+    <p>
+      Jenis Kelamin:<br>
+      <input type="radio" id="l" name="jenis_kelamin" value="laki-laki" checked>
+      <label for="l">Laki-Laki</label>
+      <input type="radio" id="p" name="jenis_kelamin" value="perempuan">
+      <label for="p">Perempuan</label>
+    </p>
+
+    <p>
+      <label for="hp">No. HP:</label><br>
+      <input type="text" id="hp" name="hp">
+    </p>
+
+    <p>
+      <label for="poli">Poli Tujuan:</label><br>
+      <select id="poli" name="poli">
+        <option value="umum" selected>Poli Umum</option>
+        <option value="gigi">Poli Gigi</option>
+        <option value="anak">Poli Anak</option>
+        <option value="kandungan">Poli Kandungan</option>
+      </select>
+    </p>
+
+    <p>
+      Riwayat Alergi:<br>
+      <input type="checkbox" id="obat" name="alergi[]" value="obat">
+      <label for="obat">Obat</label>
+      <input type="checkbox" id="makanan" name="alergi[]" value="makanan">
+      <label for="makanan">Makanan</label>
+      <input type="checkbox" id="debu" name="alergi[]" value="debu">
+      <label for="debu">Debu</label>
+    </p>
+
+    <p>
+      <label for="keluhan">Keluhan:</label><br>
+      <textarea id="keluhan" name="keluhan" rows="5" cols="30"></textarea>
+    </p>
+
+    <p>
+      <input type="submit" value="Daftar Berobat">
+      <input type="reset" value="Reset">
+    </p>
+
+  </form>
+</body>
+</html>

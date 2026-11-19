@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulir Perpustakaan Kota Madiun</title>
+</head>
+<body>
+  <h1>Formulir Pendaftaran Anggota</h1>
+  <h2>Perpustakaan Kota Madiun</h2>
+
+  <form action="#" method="post">
+
+    <p>
+      <label for="nama">Nama Lengkap:</label><br>
+      <input type="text" id="nama" name="nama" required>
+    </p>
+
+    <p>
+      <label for="nik">NIK:</label><br>
+      <input type="text" id="nik" name="nik" maxlength="16" required>
+    </p>
+
+    <p>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email">
+    </p>
+
+    <p>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" required>
+    </p>
+
+    <p>
+      Jenis Kelamin:<br>
+      <input type="radio" id="l" name="jenis_kelamin" value="laki-laki" checked>
+      <label for="l">Laki-Laki</label>
+      <input type="radio" id="p" name="jenis_kelamin" value="perempuan">
+      <label for="p">Perempuan</label>
+    </p>
+
+    <p>
+      <label for="keanggotaan">Jenis Keanggotaan:</label><br>
+      <select id="keanggotaan" name="keanggotaan">
+        <option value="pelajar">Pelajar</option>
+        <option value="mahasiswa">Mahasiswa</option>
+        <option value="umum" selected>Umum</option>
+      </select>
+    </p>
+
+    <p>
+      Minat Bacaan:<br>
+      <input type="checkbox" id="novel" name="minat[]" value="novel">
+      <label for="novel">Novel</label>
+      <input type="checkbox" id="sains" name="minat[]" value="sains">
+      <label for="sains">Sains</label>
+      <input type="checkbox" id="sejarah" name="minat[]" value="sejarah">
+      <label for="sejarah">Sejarah</label>
+    </p>
+
+    <p>
+      <label for="alamat">Alamat:</label><br>
+      <textarea id="alamat" name="alamat" rows="4" cols="30"></textarea>
+    </p>
+
+    <p>
+      <input type="submit" value="Daftar">
+      <input type="reset" value="Reset">
+    </p>
+
+  </form>
+</body>
+</html>
